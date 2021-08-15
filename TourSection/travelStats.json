@@ -1,0 +1,46 @@
+{"travels":[
+	{
+		"name":"Greece",
+		"rating":4
+	},
+	{
+		"name":"New York",
+		"rating":4.5
+	},
+	{
+		"name":"Delhi",
+		"rating":3.4
+	},
+	{
+		"name":"Australia",
+		"rating":4.2
+	},
+	{
+		"name":"Kashmir",
+		"rating":4.8
+	},
+	{
+		"name":"Jaipur",
+		"rating":4.1
+	},
+	{
+		"name":"Sikkim",
+		"rating":3.8
+	},
+	{
+		"name":"Italy",
+		"rating":3.9
+	},
+	{
+		"name":"Bali",
+		"rating":3.5
+	},
+	{
+		"name":"Brazil",
+		"rating":4.2
+	},
+	{
+		"name":"Manali",
+		"rating":4.2
+	}
+]}

@@ -1,0 +1,54 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+       font-size: 120%;
+       background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdx9VlX6vTLVvZvpaa2GwM__LrUmPR0Qq0SQ&usqp=CAU);
+       background-repeat: no-repeat;
+       background_position: center;
+      
+       background-size: cover;
+}
+
+.header {
+	width: 30%;
+         background-color: #555; 
+         opacity: 0.8;
+	margin: 50px auto 0px;
+           margin-top: 100px;
+	text-align: center;
+	border: 1px solid black;
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+	padding: 20px;
+}
+form, .content {
+	width: 30%;
+         height: 200px;
+	margin: 0px auto;
+	padding: 20px;
+	border: 1px solid black;
+	background: white;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.error {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: yellow; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
+/*for you are now login sentence*/
+.success {
+	color: #3c763d; 
+         text-align: center;
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	margin-bottom: 20px;
+          border-radius:10px;
+}

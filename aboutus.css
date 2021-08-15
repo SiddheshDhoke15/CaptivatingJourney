@@ -1,0 +1,128 @@
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: right;
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.5s all;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+li:hover {
+  background-color: #f39d1a;
+  #opacity: 0.6;
+}
+.active{
+  background-color: white;
+  opacity: 0.6;
+}
+.heading{
+  text-align: center;
+  font-family: Gabriola;
+  font-size: 65px;
+}
+
+/*
+nav{
+	width: 100%;
+	height: 80px;
+	background-color: #0001;
+	line-height: 80px;
+}
+
+nav ul{
+	float: right;
+	margin-right: 30px;
+	overflow: hidden;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	transition: 0.5s all;
+}
+
+nav ul li:hover{
+	background-color: #f39d1a;
+	
+}
+
+nav ul li a:active{
+	background-color: #f39d1a;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	padding: 30px;
+	font-size: 20px;
+	display: block;
+}
+*/
+
+body{
+  -webkit-animation: backg 19s infinite;
+}
+@-webkit-keyframes backg{
+        0%,100%{
+          background-image: url(Images/a1.jpg);
+          background-size: auto;
+        }
+        25%{
+          background-image: url(Images/a2.jpg);
+          background-size: auto;
+        }
+        50%{
+          background-image: url(Images/a3.jpg);
+          background-size: auto;
+        }
+        75%{
+          background-image: url(Images/a4.jpg);
+          background-size: auto;
+        }
+}
+.left{
+  background-color: #ffffff;
+  margin-left: 10%;
+}
+.right{
+  float: right;
+  background-color: #ffffff;
+  margin-right: 10%;
+  margin-top: -6%;
+}
+.bottom{
+  background-color: #ffffff;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  margin-top: 14%;
+}
+div{
+  opacity: 0.5;
+  width: 500px;
+  padding: 5%;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-animation: fly 4s ease-in-out infinite;
+}
+@-webkit-keyframes fly{
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+   to   { transform: translate(0, -0px); } 
+}
+h5{
+  font-size: 20px;
+}

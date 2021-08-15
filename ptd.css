@@ -1,0 +1,48 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Candara;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.caption span.border {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+
+.details{
+  color: black;
+  background-color: white;
+  text-align: justify;
+  padding: 50px 80px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+table{
+  margin: 0 auto;
+}
+th,td{
+  text-align: center;
+  padding-right: 100px;
+}

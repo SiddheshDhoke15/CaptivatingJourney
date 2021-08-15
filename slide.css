@@ -1,0 +1,386 @@
+/*to avoid adding scrollabe before and after sliding*/
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+video{
+position: fixed;
+z-index: -1;
+min-width: 100%;
+min-height: 100%;
+}
+
+
+body{
+  width: 100%;
+  height: 100vh;/*means the height of this element is equal to 100% of the viewport height.*/
+  display: flex;/*It is used to set the length of flexible items*/
+  justify-content: center;
+  align-items: center;
+ 
+  font-family: 'Nunito', sans-serif;
+}
+/*for sign in and also for sign up fields */
+input{
+width: 200px;
+margin-left: 40px;
+background: transparent;
+outline: none;
+padding: 10px;
+font-size: 13px;
+border-radius: 30px;
+box-shadow: 0 0 4px yellow;/*outer covering of input field button*/
+}
+/*for login button of sign in page*/
+.btn{
+padding: 5px 20px;
+margin-top: 20px;
+margin-left: 200px;
+background: transparent;
+border-radius: 30px;
+box-shadow: 0 0 4px pink;
+cursor: pointer;
+}
+
+input[placeholder]:focus{
+text-align: center; 
+color: Skyblue;/*color for user enter details like name and psw*/
+}
+input:focus, .btn:hover{
+box-shadow: 0 0 30px Orange;/*sign in box */
+}
+.form sign-in{
+height: 400px;
+width: 300px;
+border-radius: 10 px;
+display: flex;
+flex-direction: column;/*flex-direction property specifies the direction of the flexible items.*/
+align-items: centre;
+background: rgba(0,0,0,0.1);
+box-shadow: 0 0 100px rgba(0,0,0,1);
+color: white;
+padding-top: 60px;
+}
+/*for all heading 2*/
+h2{
+width: 100%; 
+letter-spacing: 1px;
+margin-left: 30px;
+}
+/*for sign in word on sign in page*/
+h3{
+color: white;
+width: 100%; 
+letter-spacing: 1px;
+margin-left: 280px;
+}
+
+.login-form{
+height: 700px;
+width: 940px;
+border-radius: 10 px;
+display: flex;
+flex-direction: column;/*flex-direction property specifies the direction of the flexible items.*/
+align-items: centre;
+background: rgba(0,0,0,0.1);
+box-shadow: 10px 10px 100px rgba(0,0,0,1);
+color: #fff;/*for sign in word*/
+padding-top: 60px;
+}
+/*overall box */
+.cont{
+  overflow:hidden;
+  position: absolute;/*is positioned relative to the nearest positioned ancestor*/
+  width: 800px;
+  height: 550px;
+  top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);/*used to align right image in the box ie slider*/
+}
+/*after sliding how to arrange button*/
+.form{
+  position: relative;
+  width: 640px;
+  height: 100%;
+  padding: 50px 30px;
+  transition: -webkit-transform 1.2s ease-in-out;  
+}
+
+h2{
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+/*label for sign up form*/
+label{
+  display: block;
+  width: 260px;
+  margin: 25px auto 0;
+  text-align: center;
+}
+
+/*name email etc for signup form*/
+label span{
+margin-left: 70px;
+  font-size: 14px;
+  font-weight: 600;
+  color: khaki;
+  text-transform: uppercase;/*for capital letter(name,email etc)*/
+}
+/*input field for sign up form*/
+input{
+color: orange;
+  display: block;
+  width: 100%;
+background: transparent;
+border radius: 30px;
+box shadow: 0 0 4px #fff;
+  font-size: 16px;
+  padding-bottom: 5px;
+ transition: box-shadow 0.5s ease;
+  text-align: center;
+  font-family: 'Nunito', sans-serif; 
+}
+/*for login and sign up button*/
+button{
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  height: 36px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+/*login button*/
+.submit{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: 'Nunito', sans-serif;
+  
+}
+.submitup{
+margin-top: 40px;
+margin-right: 120px;
+box-shadow:20px 20px 25px 10px khaki inset;  
+}
+.submit:hover{
+  background: -webkit-linear-gradient(left, #b224ef, #7579ff);
+}
+
+.forgot-pass{
+  margin-top: 15px;
+  margin-left: 265px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.forgot-pass:hover{
+  color: red;
+}
+/*to align social media icon*/
+.social-media{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media ul{
+  list-style: none;
+}
+/*to arrange in one line rather than vetically like list*/
+.social-media ul li{
+  display: inline-block;
+  cursor: pointer;
+ margin-left: 70px;
+}
+
+.social-media img{
+  width: 40px;
+  height: 40px;
+}
+/*right panel for sign up on login page */
+.sub-cont{
+  overflow: hidden;
+  position: absolute;
+  left: 640px;
+  top: 0;
+  width: 1000px;
+  height: 100%;
+  padding-left: 260px;
+  transition: transform 1.2s ease-in-out;
+}
+/*after sliding to adjust the left content*/
+.cont.s-signup .sub-cont{
+  -webkit-transform:translate3d(-640px, 0, 0);
+          transform:translate3d(-640px, 0, 0);
+}
+
+
+.img{
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 100%;
+  padding-top: 360px;
+}
+/*to show img at right panel in sign up form*/
+.img:before{
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 900px;
+  height: 100%;
+ background-image: url(https://pacificoadventure.com/wp-content/uploads/2013/08/4-Steps-to-Create-the-Ultimate-Promotion-Plan-For-Tourism-Company.jpg);
+  background-size: cover;
+  
+  
+}
+/*after sliding*/
+.img:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+}
+.cont.s-signup .img:before{
+  -webkit-transform:translate3d(900px, 0, 0);
+          transform:translate3d(640px, 0, 0);
+}
+/*text on photo at right panel of sign in page*/
+.img-text{
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  padding: 0 20px;
+  text-align: left;
+  color: #fff;
+  transition: -webkit-transform 1.2s ease-in-out;
+  
+}
+
+.img-text h2{
+  text-align: left;
+  font-weight: normal;
+}
+
+.img-text p{
+  
+  line-height: 1.5;
+}
+
+.cont.s-signup .img-text.m-up{
+  -webkit-transform:translateX(520px);
+          transform:translateX(520px);
+}
+
+.img-text.m-in{
+  -webkit-transform:translateX(-520px);
+          transform:translateX(-520px);
+}
+
+.cont.s-signup .img-text.m-in{
+  -webkit-transform:translateX(0);
+          transform:translateX(0);
+}
+
+/*to pad from top pf sign in first page*/
+.sign-in{
+  padding-top: 65px;
+  -webkit-transition-timing-function:ease-out;
+          transition-timing-function:ease-out;
+}
+
+.cont.s-signup .sign-in{
+  -webkit-transition-timing-function:ease-in-out;
+          transition-timing-function:ease-in-out;
+  -webkit-transition-duration:1.2s;
+          transition-duration:1.2s; 
+  -webkit-transform:translate3d(640px, 0, 0);
+          transform:translate3d(640px, 0, 0);
+}
+/*sign up button at right of first page for border and background*/
+.img-btn{
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+  width: 100px;/*sign up button at right of first page*/
+  height: 36px;
+  margin-left: 45px;
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+}
+/*after slide change */
+.img-btn:after{
+  content: '';
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+
+.img-btn span{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack:center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transition:-webkit-transform 1.2s;
+  transition: -webkit-transform 1.2s;
+  transition: transform 1.2s;
+  transition: transform 1.2s, -webkit-transform 1.2s;;
+}
+
+.img-btn span.m-in{
+  -webkit-transform:translateY(-72px);
+          transform:translateY(-72px);
+}
+
+.cont.s-signup .img-btn span.m-in{
+  -webkit-transform:translateY(0);
+          transform:translateY(0);
+}
+
+.cont.s-signup .img-btn span.m-up{
+  -webkit-transform:translateY(72px);
+          transform:translateY(72px);
+}
+
+.sign-up{
+  -webkit-transform:translate3d(-900px, 0, 0);
+          transform:translate3d(-900px, 0, 0);
+}
+
+.cont.s-signup .sign-up{
+  -webkit-transform:translate3d(0, 0, 0);
+          transform:translate3d(0, 0, 0);
+}
+
+

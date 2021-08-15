@@ -1,0 +1,330 @@
+/*CODE FOR NAVIGATION BAR*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#navBar{
+	width: 100%;
+	height: 100vh;
+	background-image: url("Images/nick-karvounis.jpg");
+	background-size: cover;
+	
+}
+
+/* https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/anatomy-of-a-blog-post-deconstructed-open-graph.jpg 
+https://techmeetups.com/wp-content/uploads/2019/06/blogging-SMB.png
+https://cdn3.wpbeginner.com/wp-content/uploads/2016/11/blogimagetools.jpg
+*/
+
+nav{
+	width: 100%;
+	height: 80px;
+	background-color: #0001;
+	line-height: 80px;
+}
+
+nav ul{
+	float: right;
+	margin-right: 30px;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	transition: 0.5s all;
+}
+
+nav ul li:hover{
+	background-color: #f39d1a;
+	
+}
+
+nav ul li a:active{
+	background-color: #f39d1a;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	padding: 30px;
+	font-size: 20px;
+}
+
+/***************************************************/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	#transition: all .5s;
+	text-decoration: none;
+	color: #fff;
+}
+
+img {
+	width: 100%;
+	transition: all .5s;
+}
+
+section {
+	text-align: center;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 10px auto;
+}
+
+main {
+	display: grid;
+	#display: inline-block;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 30px;
+	margin: 30px 15px 0 15px;
+	#float: left;
+}
+
+main span p {
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+header {
+	width: 70%;
+	margin: 0 auto;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 50px;
+	color: rgba(52, 73, 94, 1.0);
+	font-weight: 500;
+}
+
+header h1 p {
+	margin: 50px;
+}
+.singleBlog {
+	position: relative;
+	overflow: hidden;
+	max-height: 580px;
+	height: 100%;
+	box-sizing: border-box;
+	box-shadow: 0 2px 10px #ccc;
+	transition: all .5s;
+}
+
+.singleBlog:hover {
+	box-shadow : 0 2px 13px #ccc;
+	transition: all .5s;
+}
+
+.singleBlog:hover img {
+	transform: scale(1.1);
+	transition: all .4s;
+}
+
+.blogContent {
+	position: absolute;
+	left: 0;
+	bottom: -45px;
+	width: 100%;
+	color: #fff;
+	padding: 10px 5px;
+	background: linear-gradient(45deg, rgba(21,82,153,1)
+	0%, rgba(144,192,229,.4) 100%);
+	transition: all .5s;
+}
+
+.singleBlog:hover .blogContent {
+	bottom: 0;
+	transition: all .5s;
+}
+
+.blogContent h3{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.blogContent h3 span {
+	display: block;
+	font-size: 60%;
+	margin-top: 5px;
+	font-weight: 600;
+	color: white;
+}
+
+.blogContent a {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.blogContent .btn {
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	font-weight: 400;
+}
+
+.blogContent .btn:hover {
+	background: rgba(52, 152, 219, 1.0);
+	transition: all .5s;
+	text-decoration: none;
+}
+
+.blogContent a:hover {
+	text-decoration: underline;
+}
+
+
+@media (max-width: 992px) {
+	main {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	main {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 15px;
+	}
+	header {
+		width: 95%;
+	}
+	.blogContent {
+		bottom: 0;
+	}
+}
+
+@media (max-width:500px) {
+	main {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+
+.active{
+  background-color: white;
+  opacity: 0.6;
+}
+
+
+/*******Videos*****/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.videos {
+	width: 80%;
+	margin: 80px auto;
+}
+
+.videos h2 {
+	padding: 60px 0;
+	margin: 0;
+	font-size: 44px;
+	text-align: center;
+	color: rgba(52, 73, 94, 1.0);
+	font-weight: 500;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	flex-wrap : wrap;
+}
+
+.col {
+	flex-basis: 50%;
+	min-width: 250px;
+}
+
+.feature-img {
+	width: 83%;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.small-img-row {
+	display: flex;
+	background: #efefef;
+	margin: 20px 0;
+	align-items: center;
+	overflow: hidden;
+	width: 85%;
+}
+
+.small-feature-img {
+	position: relative;
+}
+
+.small-feature-img img{
+	width: 160px;
+	margin-left: 8px;
+}
+
+.small-img-row p{
+	margin-left: 10px;
+	margin-right: 10px;
+	line-height: 23px;
+	font-size: 16px;
+}
+
+.play {
+	width: 60px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	cursor: pointer;
+}
+
+.small-feature-img .play {
+	width: 35px;
+}
+
+.playvideo {
+	width: 75%;
+	position: absolute;
+	left: 50%;
+	top: 420%;
+	transform: translate(-50%,-50%);
+	display: none;
+}
+
+video: focus {
+	outline: none;
+}
+
+.close-btn {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 30px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,561 @@
+
+/*CODE FOR NAVIGATION BAR*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#main{
+	width: 100%;
+	height: 100vh;
+	background-image: url("Images/HomePageBgImg.jpg");
+	background-size: cover;
+	
+}
+
+.active{
+  background-color: white;
+  opacity: 0.6;
+}
+
+ 
+/*
+https://media.cntraveler.com/photos/5c5dfe5de243ea4a765e8082/master/w_1600%2Cc_limit/Moorea_GettyImages-574066967.jpg
+*/ 
+
+nav{
+	width: 100%;
+	height: 80px;
+	background-color: #0001;
+	line-height: 80px;
+}
+
+nav ul{
+	float: right;
+	margin-right: 30px;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	transition: 0.5s all;
+}
+
+nav ul li:hover{
+	background-color: #f39d1a;
+	
+}
+
+nav ul li a:active{
+	background-color: #f39d1a;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #000;
+	padding: 30px;
+	font-size: 22px;
+}
+
+
+
+
+/*CODE FOR HOMESCREEN BG, LOGO, SEARCH BAR*/
+
+.myPics {
+	display:none;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+.images {
+	margin: 50px 150px;
+	width: 1200px;
+}
+	
+#logo {
+	margin : 10px 465px;
+	display:block;
+	width:35%;
+}
+		
+#search {
+	padding: 14px 20px;
+	margin: 10px 220px 50px;
+	border-radius: 15px;
+	width: 65%;
+	text-align: center;
+	font-size: 20px;
+	font-weight : bold ;
+	color: white;
+	background: rgb(0,0,0,0.5);	
+}
+
+/****************************************************************/
+
+.blogs {
+	padding : 100px 0;
+
+}
+
+.blogs h1 {
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background-color: yellow;
+}
+
+.containerBlog {
+	width: 500px;
+	height: 400px;
+	margin: 70px 50px;
+	padding: 2px 10px;
+	display: block;
+}
+
+.containerBlog img {
+	width: 1400px;
+	height: 400px;
+}
+
+/*
+.containerBlog {
+	#width: 30%;
+	width: 500px;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+	display: block;
+}*/
+
+#rhsImage1 {
+	width: 445px;
+	height: 200px;
+	padding: 30px 5px;
+	margin: 10px 5px 20px 15px;
+	background: #fff;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0 15px 50px rgba(0,0,0,.2);
+	#float:left;
+}
+
+#rhsImage2 {
+	width: 445px;
+	height: 200px;
+	padding: 30px 5px;
+	margin: 10px 15px 20px 15px;
+	background: #fff;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0 15px 50px rgba(0,0,0,.2);
+	#float:left;
+}
+
+#rhsImage3 {
+	width: 445px;
+	height: 200px;
+	padding: 30px 5px;
+	margin: 10px 5px 20px 15px;
+	background: #fff;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0 15px 50px rgba(0,0,0,.2);
+	#float: right;
+}
+
+.circle1{
+	width: 150px;
+	height: 150px;
+	background: url("https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80") center;
+	background-size: cover;
+	border-radius: 50%;
+	float: right;
+	margin: 2px 30px 30px 30px;
+	align-content: center;
+ }  
+
+ .circle2{
+	width: 150px;
+	height: 150px;
+	background: url("https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center;
+	background-size: cover;
+	border-radius: 50%;
+	float: right;
+	margin: 2px 30px 30px 30px;
+	align-content: center;
+ }  
+ 
+ .circle3{
+	width: 150px;
+	height: 150px;
+	background: url("https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80") center;
+	background-size: cover;
+	border-radius: 50%;
+	float: right;
+	margin: 2px 30px 30px 30px;
+	align-content: center;
+ }  
+ 
+/******************************************************************/
+#blog-section {
+	margin: 80px auto 0 auto;
+	text-align: center;
+	margin-top: 450px;
+}
+ 
+#grid-layout-33 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1em;
+	width: 80%;
+	margin: 5px 20px 5px 38px;
+}
+ 
+h2 {
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background-color: yellow;
+	background-image: linear-gradient(to right, white, yellow, white);
+}
+
+#grid-layout-33 a {
+	text-decoration: none;
+	color: black;
+	#transition-delay: 2s;
+}
+
+
+/**************************************************************************/
+
+#popular-section {
+	margin: 80px auto 0 auto;
+	text-align: center;
+}
+
+#grid-layout-66 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 0em;
+	width: 80%;
+	margin: 5px 20px 5px 38px;
+	
+}
+
+#grid-layout-66 a {
+	text-decoration: none;
+}
+
+#grid-layout-66 a img {
+	width: 400px;
+	height: 200px;
+	margin: 10px 0;
+	padding: 20px 42px;
+}
+
+#grid-layout-66 a img:hover {
+	transform: scale(1.2);
+	transition-timing-function: ease-in;
+	
+}
+
+/* Code for font awesome */
+
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-phone{
+  color: white;
+}
+
+.fa-envelope {
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+
+
+/* Code for Footer */
+
+.footer {
+	background: #303036;
+	color: #d3d3d3;
+	height: 400px;
+	position: relative;
+}
+
+.footer .footer-content {
+	#border: 2px solid yellow;
+	height: 350px;
+	display: flex;
+}
+
+.footer .footer-content .footer-section {
+	flex: 1;
+	padding: 25px;
+	#border: 1px solid white;
+}
+
+.footer .footer-content h1,
+.footer .footer-content h3 {
+	color: white;
+}
+
+.footer .footer-content h3 {
+	font-size: 1.8em;
+}
+
+.footer .footer-content .about h1 span {
+	color: #05f7ff;
+}
+
+.footer .footer-content .about p {
+	font-size: 0.85em;
+	margin-top: 10px;
+}
+
+.footer .footer-content .about .socials a {
+	border: 1px solid gray;
+	width: 45px;
+	height: 21px;
+	padding-top: 5px;
+	margin-right: 5px;
+	text-align: center;
+	display: inline-block;
+	font-size: 1.3em;
+	border-radius: 5px;
+}
+
+.footer .footer-content .topdest ul a{
+	display: block;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	font-size: 1.2em;
+	transition: all .3s;
+	text-decoration: none;
+	color: white;
+	list-style-type: none;
+}
+
+.footer .footer-content .topdest ul a:hover {
+	color: #05f7ff;
+	margin-left: 15px;
+	transition: all .3s;
+}
+
+.footer .footer-content .blogpost ul a{
+	display: block;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	font-size: 1.2em;
+	transition: all .3s;
+	text-decoration: none;
+	color: white;
+	list-style-type: none;
+}
+
+.footer .footer-content .blogpost ul a:hover {
+	color: #05f7ff;
+	margin-left: 15px;
+	transition: all .3s;
+}
+
+.footer .footer-content .continfo .contact span {
+	display: block;
+	font-size: 1.1em;
+	margin-bottom: 2px;
+}
+
+
+.footer .footer-bottom {
+	background: #343a40;
+	color: #686868;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 20px;
+}
+
+
+/****************TOURS*************/
+
+.containerTours {
+	width: 100%;
+	height: 100vh;
+	#background-color: #a4152c;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	justify-content: center;
+	align-items: center;
+}
+
+.containerTours a {
+	text-decoration: none;
+}
+
+.box {
+	width: 350px;
+	height: 530px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	#box-sizing: border-box;
+	margin: 20px 5px;
+}
+
+.box:hover {
+	background-color: #ccffeb;
+	transform-style: preserve-3d;
+	transform: scale(1.02);
+	transition: all ease 0.3s;
+}
+
+.box:hover .toursHead {
+	color: #ff8c1a;
+	transition: all ease 0;
+}
+
+.toursHead {
+	color: #ff4d4d;
+	font-weight: bold;
+	font-size: 25px;
+	letter-spacing: 7px;
+	margin-top: 10px;
+}
+
+.toursImg {
+	height: 350px;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.toursDes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+}
+
+.toursDes p {
+	font-weight: bold;
+	color: #6a6a74;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.toursDes .days {
+	color: #6a6a74;
+	text-align: center;
+	font-size: 24px;
+	margin: auto;
+}
+
+.toursDes .money {
+	color: #6a6a74;
+	text-align: center;
+	font-size: 24px;
+	
+}
+
+.blogContent a {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.blogContent .btn {
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	font-weight: 400;
+}
+
+.blogContent .btn:hover {
+	background: rgba(52, 152, 219, 1.0);
+	transition: all .5s;
+	text-decoration: none;
+}
+
+.blogContent a:hover {
+	text-decoration: underline;
+}
+
+
+
+/*************** Search Bar********/
+
+select {
+	box-shadow: 0 5px 20px;
+	font-size: 27px;
+	padding: 20px 290px 20px 150px;	
+	background: rgba(77,80,97,0.7);
+	color: white;
+	border: 0;
+	margin-left: 18%;
+	font-family: Arial;
+	border: none;
+}
+
+.selectBar {
+ position: relative;	
+}
+
+.btnSearch {
+	font-size: 24px;
+	padding: 10px;
+	margin-left: 20px;
+	#margin-right: 10px;
+	background: rgba(59,59,71,0.8);
+	color: white;
+	border: none;
+}
+
+
+#background: #3b3b47;
+
+
+
+
+
+ 

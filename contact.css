@@ -1,0 +1,236 @@
+body{
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.silder{
+height: 100vh;
+width: 100%;
+background: url(https://ca.hellomagazine.com/imagenes//travel/2020052490360/top-world-famous-landmarks/0-433-104/landmarks-worldwide-t.jpg);/*rio de janerio*/
+background-size: cover;
+background_position: center;
+background-repeat: no-repeat;
+transition: 10s;
+animation-name: animate;
+animation-direction: alternate-reverse;
+animation-duration: 30s;
+animation-fill-mode: forwards;
+animation-iteration-count: infinite;
+animation-play-state: running;
+animation-timing-funtion: ease-in-out;
+
+}
+
+@keyframes animate{
+0%{
+background-image: url(https://www.earthsattractions.com/wp-content/uploads/2018/08/sydney_opera-unsplash.jpg);/*sydney*/
+}
+20%{
+background-image: url(https://www.abercrombiekent.com/-/media/ak/media-for-prod/journeys/tailor-made/1920x660-mh/europe-tm-greece-jewel-mediterranean-mykonos-mh.jpg?h=660&w=1920&la=en&hash=920EF5EDE8604919897C8C38809D5CEF);/*greece*/
+}
+40%{
+background-image: url(https://ca-times.brightspotcdn.com/dims4/default/20c1a65/2147483647/strip/true/crop/959x503+0+18/resize/1200x630!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fbe%2F81%2Faadeb37c4c6cbbd34d3e63919ffb%2Fla-photos-handouts-la-ca-liberty-mother-of-exiles-movie-492.JPG);/*status of libery*/
+}
+60%{
+background-image: url(https://www.jetsetter.com/wp-content/uploads/sites/7/2018/04/UH0NeXII.jpeg);/*dubai*/
+}
+80%{
+background-image: url(https://cnet1.cbsistatic.com/img/FqwrrRqL8O0Uev1Vjg0-T4iEflc=/940x0/2020/03/20/47f783d0-094e-42f6-9b93-096282772107/gettyimages-1008566072.jpg);/*singapore*/
+}
+100%{
+background-image: url(https://ca.hellomagazine.com/imagenes//travel/2020052490360/top-world-famous-landmarks/0-433-104/landmarks-worldwide-t.jpg);/*rio de janerio*/
+}
+}
+.contact{/* for items to arrange*/
+position: relative;
+min-height: 100vh;
+padding: 50px 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+.contact .content/* to arrange word contact us*/
+{
+max-width: 800px;
+text-align: center;
+}
+.contact .content h2{
+font-size: 36px;
+font-weight: 500;
+color: white;
+} 
+.contact .content p{
+font-weight: 300;
+color: white;
+}
+.container{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+}
+/*to arrange info at left and user details at right*/
+.container .contactInfo{
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+/*to arrange add phn email with distance between them*/
+.container .contactInfo .box{
+position: relative;
+padding: 20px 0;
+display: flex;
+}
+/*for icon(add,phn,email)*/
+.container .contactInfo .box .icon{
+min-width: 60px;
+height: 60px;
+background: white;
+justify-content: center;
+display: flex;
+align-items: center;
+border-radius: 50%;/*to arrange icon in circle*/
+font-size: 22px;
+}
+/*to arrange the content of add,phn,email*/
+.container .contactInfo .box .text{
+display: flex;
+margin-left: 20px;
+font-size: 16px;
+color: white;
+flex-direction: column;
+font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+font-weight: 500;
+color: #00bcd4;/*to change the color of add phn mail ie blue*/
+}
+.contactForm{
+width: 40%;
+padding: 40px;
+background: white;/*background of send message */
+}
+.contactForm h2{
+font-size: 30px;
+color: #333;
+font-weight: 500;
+}
+.contactForm .inputBox{
+position: relative;
+width: 100%;
+margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+width: 100%;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+border: none;
+border-bottom:2px solid #333;/*line for input */
+outline: none;
+resize: none;
+
+}
+.contactForm .inputBox span{
+position: absolute;
+left: 0;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+pointer-events: none;
+transition: 0.5s;
+color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+color: #e91e63;
+font-size: 12px;
+transform: translateY(-20px);
+}
+/*for submit button*/
+.contactForm .inputBox input[type="submit"]
+{
+width: 100px;
+background: #00bcd4;
+color: #fff;
+border: none;
+cursor: pointer;
+padding: 10px;
+font-size: 18px;
+}
+@media (max-width: 991px)
+{
+.contact{
+padding: 50px;
+}
+.container
+{
+flex-direction: column;
+}
+.container .contactInfo
+{
+margin-bottom: 40px;
+}
+.container .contactInfo,
+ .contactForm
+{
+width: 100%;
+}
+}
+
+/*The code below is for navigation bar*/
+
+
+
+nav{
+	width: 100%;
+	height: 80px;
+	background-color: #0001;
+	line-height: 80px;
+}
+
+nav ul{
+	float: right;
+	margin-right: 30px;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	transition: 0.5s all;
+}
+
+nav ul li:hover{
+	background-color: #f39d1a;
+	
+}
+
+nav ul li a:active{
+	background-color: #f39d1a;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	padding: 30px;
+	font-size: 20px;
+}
+
+.active{
+  background-color: white;
+  opacity: 0.6;
+}

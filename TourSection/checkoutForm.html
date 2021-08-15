@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout Page</title>
+	<link rel="stylesheet" type="text/css" href="checkoutForm.css">
+	<link rel="icon" type="image/png" href="travelIcon2.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<h2><i>Checkout Form</h2>
+	<button onclick="ajaxfunction()">Message From Us</button>
+	<div id="test">
+	</div>
+	<br>
+	<button onclick="window.location.href='travelStats.html'">Stats</button>
+	<p><i>Thank you for booking with Captivating Journey. We know you might be concerned
+	about travelling, but we assure you We'll take care of everything!</i></p>
+	<div class="row">
+		<div class="col-75">
+			<div class="container">
+				<form action="thanks.html" name="myForm" onsubmit="return validateForm()">
+					<div class="row">
+						<div class="col-50">
+							<h3>Billing address</h3>
+							<label for="fname"><i class="fa fa-user"></i> Full name</label>
+							<input type="text" id="fname" name="firstname" pattern="(?=.*[A-Za-z]).{3,}"  required title="3 alphabetic characters minimum">
+							<label for="email"><i class="fa fa-envelope"></i> Email</label>
+							<input type="email" id="email" name="email" required>
+							<label for="adr"><i class="fa fa-address-card-o"></i> Address (Optional)</label>
+							<input type="text" id="adr" name="address">
+							<label for="phn"><i class="fa fa-phone"></i> Phone Number</label>
+							<input type="text" id="phn" name="phn" pattern="[0-9]{10}" required oninvalid="this.setCustomValidity('Enter 10digit phone number')" oninput="this.setCustomValidity('')">
+							
+							<div class="row">
+								<div class="col-50">
+									<label for="pkg">Package Selected</label>
+									<!--<input type="text" id="pkg" name="pkg">-->
+									<select id="pkg" name="pkg" required>
+										<option disabled selected value> Destination </option>
+										<option value="Rs 47,049">Greece</option>
+										<option value="Rs 44,799">Australia</option>
+										<option value="Rs 77,999">Brazil</option>
+										<option value="Rs 42,999">Manali</option>
+										<option value="Rs 22,999">Jaipur</option>
+										<option value="Rs 22,044">Delhi</option>
+										<option value="Rs 35,999">Dubai</option>
+										<option value="Rs 60,079">NewYork</option>
+										<option value="Rs 33,049">Kashmir</option>
+										<option value="Rs 49,049">Sikkim</option>
+										<option value="Rs 1,44,799">Italy</option>
+										<option value="Rs 1,77,499">Bali</option>
+									</select>
+									<p id="demo"></p>
+								</div>
+								<div class="col-50">
+									<label for="amtt">Amount</label>
+									<input type="text" id="amtt" name="amtt" disabled>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-50">
+							<h3>Payment</h3>
+							<label for="fname">Accepted Cards</label>
+							<div class="icon-container">
+								<i class="fa fa-cc-visa" style="color:navy;"></i>
+								<i class="fa fa-cc-amex" style="color:blue;"></i>
+								<i class="fa fa-cc-mastercard" style="color:red;"></i>
+								<i class="fa fa-cc-discover" style="color:orange;"></i>
+							</div>
+							<label for="cname">Cardholder Name</label>
+							<input type="text" id="cname" name="cardname" pattern="(?=.*[A-Za-z]).{3,}"  required title="3 alphabetic characters minimum">
+							<label for="ccnum">Credit Card Number</label>
+							<input type="text" id="ccnum" name="cardnumber" pattern="[0-9]{16}" required oninvalid="this.setCustomValidity('Enter 16-digit card number')" oninput="this.setCustomValidity('')">
+							<label for="expmonth">Exp Month</label>
+							<input type="number" id="expmonth" name="expmonth" placeholder="MM" min="1" max="12" required oninvalid="this.setCustomValidity('Enter correct month')" oninput="this.setCustomValidity('')">
+							
+							<div class="row">
+								<div class="col-50">
+									<label for="expyear">Exp year</label>
+									<input type="number" id="expyear" name="expyear" placeholder="YY" min="20" required oninvalid="this.setCustomValidity('Enter correct year')" oninput="this.setCustomValidity('')">
+								</div>
+								<div class="col-50">
+									<label for="cvv">CVV</label>
+									<input type="password" id="cvv" name="cvv" pattern="[0-9]{3}" required oninvalid="this.setCustomValidity('Enter correct 3-digit CVV ')" oninput="this.setCustomValidity('')">
+								</div>
+							</div>
+						</div>
+					</div>
+					<input type="submit" value="Continue to checkout" class="btn">
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+<script>
+	/*
+	var e = document.getElementById("pkg");
+	e.addEventListener("change", function() {
+
+	
+	var val = e.options[e.selectedIndex].text;
+	document.getElementById("amtt").value = val;
+
+	});
+	*/
+
+
+	// To show preselected value
+	/*
+	var val = e.options[e.selectedIndex].text;
+	document.getElementById("amtt").value = val;
+	*/
+		
+	var select = document.getElementById('pkg');
+	var input = document.getElementById('amtt');
+	select.onchange = function() {
+    input.value = select.value;
+}
+	
+	function ajaxfunction(){
+			var ajax = new XMLHttpRequest();
+			ajax.onreadystatechange = function() {
+				if (this.readyState==4 && this.status==200){
+					alert(this.responseText);
+					//document.getElementById("test").innerHTML= this.responseText;
+				}
+			};
+			ajax.open("POST", "text2.txt", true);
+			ajax.send();
+		}
+
+</script>
+
+</body>
+
+
+</html>

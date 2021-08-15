@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>CAPTIVATING JOURNEY</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="navBar.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="Images/travelIcon2.png">
+</head>
+
+<body>
+<section class="up">
+<div id="main">
+	<nav>
+		<ul>
+			<li><a href='prj0.html'>Home</a></li>
+			<li><a href='TourSection/tour.html'>Tours</a></li>
+			<li><a href='blogs1.html'>Blogs</a></li>
+			<li><a href='aboutus.html'>About Us</a></li>
+			<li><a href='contactus.html'>Contact</a></li>
+			<li><a href='slidelogin.php'>Login</a></li>
+		</ul>
+	</nav> 
+	
+	<img id="logo" src="Images/logoalt2.png">
+	<div class="selectBar">
+		<select id="select">
+			<option disabled selected value> Where you would like to go... </option>
+			<option value="Greece">Greece</option>
+			<option value="Jaipur">Jaipur</option>
+			<option value="Paris">Paris</option>
+			<option value="Kashmir">Kashmir</option>
+			<option value="Bali">Bali</option>
+			<option value="Dubai">Dubai</option>
+			<option value="Brazil">Brazil</option>
+			<option value="Italy">Italy</option>
+			<option value="More">More...</option>
+		</select>
+		
+		<button type="button" class="btnSearch" id= "submit">Search<i class="fa fa-search"></i></button>
+	</div>
+	
+	<script>
+		const map = {
+		
+		Greece: 'TourSection/tour.html#greece'
+		,Jaipur: 'TourSection/tour.html#jaipur'
+		,Paris: 'TourSection/tour.html#paris'
+		,Kashmir: 'TourSection/tour.html#kashmir'
+		,Bali: 'TourSection/tour.html#bali'
+		,Dubai: 'TourSection/tour.html#dubai'
+		,Brazil: 'TourSection/tour.html#brazil'
+		,Italy: 'TourSection/tour.html#italy'
+		,More: 'TourSection/tour.html'
+		}
+		document.getElementById('submit').addEventListener('click', () =>
+		location.href = map[document.getElementById('select').value])
+	</script>
+	
+	
+
+</div>
+</section>
+
+<br><br><br><br>
+<div id="popular-section">
+	<h2>POPULAR TRAVEL DESTINATIONS</h2>
+</div>
+
+<div id="grid-layout-66">
+	<a href="rajasthan.html"><img src="https://cdn1.tripoto.com/media/filter/nxxl/img/1791424/Image/1586242373_rajasthan_01.jpg"></a>
+	<a href="punjab.html"><img src="Images/punjab.jpg"></a>
+	<a href="kerala.html"><img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1571999040_kerala.jpg"></a>
+	<a href="goa.html"><img src="https://cdn1.tripoto.com/media/filter/tst/img/559032/Image/1586793844_5_1.jpg"></a>
+	<a href="#"><img src="https://www.davestravelpages.com/wp-content/uploads/2019/07/wanderlust-quotes.jpg"></a>
+	<a href="uttarakhand.html"><img src="https://cdn1.tripoto.com/media/filter/nxxl/img/1791424/Image/1587384165_7_8.jpg"></a>
+</div>
+
+
+<div id="popular-section">
+	<h2>TOURS</h2>
+</div>
+<br><br>
+<div class="containerTours">
+	<a href="TourSection/tour.html">
+	<div class="box">
+		<p class="toursHead">MALDIVES</p>
+		<img src="https://wallpapershome.com/images/pages/pic_v/5312.jpg" class="toursImg" width="75%;">
+		<div class="toursDes">
+			<p class="days"><i><b> 4 Days | 3 Nights </b></i></p>
+			<p class="money"><i>&#8377 84,990/-</i></p>
+		</div>
+	</div></a>
+	
+	<a href="TourSection/tour.html">
+	<div class="box">
+		<p class="toursHead">DELHI</p>
+		<img src="https://i.pinimg.com/originals/75/a4/fe/75a4fee6a29247b862a161906a230023.jpg" class="toursImg" width="75%;">
+		<div class="toursDes">
+			<p class="days"><i><b> 7 Days | 6 Nights </b></i></p>
+			<p class="money"><i>&#8377 81,864/-</i></p>
+		</div>
+	</div></a>
+	
+	<a href="TourSection/tour.html">
+	<div class="box">
+		<p class="toursHead">SYDNEY</p>
+		<img src="https://wallpapershome.com/images/pages/pic_v/5050.jpg" class="toursImg" width="75%;">
+		<div class="toursDes">
+			<p class="days"><i><b> 10 Days | 9 Nights </b></i></p>
+			<p class="money"><i>&#8377 1,78,990/-</i></p>
+		</div>
+	</div></a>
+	
+	<a href="TourSection/tour.html">
+	<div class="box">
+		<p class="toursHead">ITALY</p>
+		<img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX2370125.jpg" class="toursImg" width="75%;">
+		<div class="toursDes">
+			<p class="days"><i><b> 8 Days | 7 Nights </b></i></p>
+			<p class="money"><i>&#8377 80,900/-</i></p>
+		</div>
+	</div></a>
+	
+	<a href="TourSection/tour.html">
+	<div class="box">
+		<p class="toursHead">KASHMIR</p>
+		<img src="https://image.freepik.com/free-photo/beautiful-river-snow-covered-mountains-landscape-kashmir-state-india_1232-4806.jpg" class="toursImg" width="75%;">
+		<div class="toursDes">
+			<p class="days"><i><b> 5 Days | 4 Nights </b></i></p>
+			<p class="money"><i>&#8377 66,700/-</i></p>
+		</div>
+	</div></a>
+	
+	<a href="TourSection/tour.html">
+	<div class="box">
+		<p class="toursHead">NEW YORK</p>
+		<img src="https://image.freepik.com/free-photo/vertical-cityscape-with-tall-skyscrapers-new-york-usa_181624-6511.jpg" class="toursImg" width="75%;">
+		<div class="toursDes">
+			<p class="days"><i><b> 10 Days | 11 Nights </b></i></p>
+			<p class="money"><i>&#8377 1,90,450/-</i></p>
+		</div>
+	</div></a>
+	
+	<a href="TourSection/tour.html">
+	<div class="box">
+		<p class="toursHead">DUBAI</p>
+		<img src="https://thumbs.dreamstime.com/b/vertical-low-angle-shot-famous-burj-khalifa-building-dubai-sunny-day-164579823.jpg" class="toursImg" width="75%;">
+		<div class="toursDes">
+			<p class="days"><i><b> 4 Days | 5 Nights </b></i></p>
+			<p class="money"><i>&#8377 81,291/-</i></p>
+		</div>
+	</div></a>
+	
+	<a href="TourSection/tour.html">
+	<div class="box">
+		<p class="toursHead">JAIPUR</p>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Jaipur_03-2016_27_Hawa_Mahal_-_Palace_of_the_Winds.jpg" class="toursImg" width="75%;">
+		<div class="toursDes">
+			<p class="days"><i><b> 5 Days | 6 Nights </b></i></p>
+			<p class="money"><i>&#8377 56,000/-</i></p>
+		</div>
+	</div></a>
+
+</div>
+
+
+
+<div id="blog-section">
+	<h2>BLOGS</h2>
+</div>
+
+<div>
+	<span class="containerBlog">
+		<img src="https://images.unsplash.com/photo-1570883871231-f42e8ebcabdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="">
+	</span>
+</div>
+
+
+<div id="grid-layout-33">
+	<a href='blogs1.html'>
+	<div id="rhsImage1">
+		<div class="circle1"></div>			
+		<p><b>I’d always believed Vancouver is the most beautiful city in the world! </b>
+		<br>It’s the only city I’d known that’s uniquely situated between mountains and ocean. One can spend a day hiking or skiing the beautiful North Shore mountains, 
+		then enjoying... </p>
+	</div>
+	</a>
+	
+	<a href='blogs1.html'>
+	<div id="rhsImage2">
+		<div class="circle2"></div>			
+		<p><b>My husband and I just got married in Greece...</b>
+				<br>My husband and I just got married in Greece last month, and we took our honeymoon in Vienna, Budapest, London, Moscow and Vancouver. 
+				Budapest was one of our favorite cities!...</p>
+	</div>
+	</a>
+	
+	<a href='blogs1.html'>
+	<div id="rhsImage3">
+		<div class="circle3"></div>			
+		<p><b>Goodbye Venezuela!</b>
+			<br>In a country where scarcity is so extreme, generosity hasn't subsided!
+				Traveling across South America for the last month has taken me on exciting adventures, 
+				but visiting Venezuela has easily been the most precious part of this journey!...</p>
+	</div>
+	</a>
+</div>
+<br><br><br><br>
+
+<div class="footer">
+	<div class="footer-content">
+		<div class="footer-section about">
+			<h1 class="logo-text"><span>Captivating </span>Journey</h1>
+			<p>
+			Since 2000, ‘Captivating Journey’ has been focused on bringing our customers the best in esteem and quality travel game plans. 
+			We are enthusiastic about movement and sharing the world’s marvels on the relaxation travel side.
+			<br><br>Since our origin in 2000, in excess of 7 million clients have utilized at least one of our exhaustive travel-related administrations, 
+			which incorporate local and global air ticketing, lodging appointments, homestays, occasion bundles, transport ticketing, rail ticketing, 
+			exercises and subordinate administrations.With more than 8,000 inns contracted crosswise over India, we are India‘s biggest stage for residential lodgings.
+			</p>
+			
+			<div class="socials">
+				<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/explore" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+				<a href="https://www.google.com/intl/en-GB/gmail/about/#" class="fa fa-google"></a>
+			</div>
+		</div>
+		
+		<div class="footer-section topdest">
+			<h3>Popular Destinations</h3>
+			<br>
+			<ul>
+				<a href="rajasthan.html"><li>RAJASTHAN</li></a>
+				<a href="punjab.html"><li>PUNJAB</li></a>
+				<a href="kerala.html"><li>KERALA</li></a>
+				<a href="goa.html"><li>GOA</li></a>
+				<a href="uttarakhand.html"><li>UTTARAKHAND</li></a>
+			</ul>
+		</div>
+		
+		<div class="footer-section blogpost">
+			<h3>Blog Post</h3>
+			<br>
+			<ul>
+				<a href="blogs1.html"><li>Goodbye Venezuela!</li></a><br>
+				<a href="blogs1.html"><li>My husband and I just got married in Greece...</li></a><br>
+				<a href="blogs1.html"><li>Lisbon is one of my favorite cities...</li></a><br>
+			</ul>		
+		</div>
+		
+		<div class="footer-section continfo">
+			<h3>Contact Us</h3>
+			<br>
+			<p>
+			P-65, South Extension, Part-2,
+			<br>
+			New Delhi 110049
+			</p>
+			<br>
+			<div class="contact">
+				<span><i class="fa fa-phone"></i> &nbsp; 448-557-667</span>
+				<span><i class="fa fa-envelope"></i> &nbsp; captivatingjourney@gmail.com</span>
+			</div>		
+		</div>
+	</div>
+	
+	<div class="footer-bottom">
+		&copy; www.captivatingjourney.com | Designed by Ayushi B., Seedhita C. and Siddhesh D.
+	</div>		
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

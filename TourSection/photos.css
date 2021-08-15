@@ -1,0 +1,14 @@
+img{
+	width: 400px;
+	height: 300px;
+	margin: 40px 15px 20px 70px;
+	box-shadow: 4px 4px 10px black;
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	color: #10036d;
+}
+body{
+	background-image: -webkit-linear-gradient(#2f6fed,#a8e3e3)
+}
